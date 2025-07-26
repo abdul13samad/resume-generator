@@ -1,31 +1,91 @@
 # Node modules
 node_modules/
+jspm_packages/
 
 # API keys and secrets
 .env
 .env.local
 .env.*.local
+!.env.example
 
 # Logs
 logs/
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
 
-# OS-specific junk
-.DS_Store
-Thumbs.db
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
-# Editor-specific junk (optional)
-.vscode/
-.idea/
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage
+*.lcov
+.nyc_output
 
 # Build outputs
 dist/
 build/
+build/Release
+
+# Caches and lock files
+.cache/
+.parcel-cache/
+.npm
+.eslintcache
+.stylelintcache
+.node_repl_history
+package-lock.json
+yarn.lock
+.yarn-integrity
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Editors
+.vscode/
+.idea/
+.vscode-test
+
+# Misc
+.DS_Store
+Thumbs.db
+lib-cov
+.lock-wscript
+*.tgz
+
+# Framework outputs
+.next
+out
+.nuxt
+.vuepress/dist
+.temp
+.cache
+.svelte-kit/
+**/.vitepress/dist
+**/.vitepress/cache
+.docusaurus
+.serverless/
+.fusebox/
+.dynamodb/
+.firebase/
+.tern-port
 
 # Vercel / Netlify deployment configs
 .vercel/
 .netlify/
 
-# Optional: if you're using npm or yarn
-package-lock.json
-yarn.lock
+# Vite logs files
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
