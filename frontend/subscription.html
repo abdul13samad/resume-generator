@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Choose Your Plan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="subscription-body">
+  <div class="subscription-container">
+    <h1 class="subscription-title">Choose Your Plan</h1>
+
+    <div class="plan-cards">
+      <!-- Free Plan -->
+      <div class="plan-card">
+        <h2>Free</h2>
+        <p class="price">$0</p>
+        <ul>
+          <li>Basic Resume</li>
+          <li>Single Download</li>
+        </ul>
+        <button onclick="choosePlan('free')">Select</button>
+      </div>
+
+      <!-- Monthly Plan -->
+      <div class="plan-card popular">
+        <h2>Monthly</h2>
+        <p class="price">$2.49</p>
+        <ul>
+          <li>Pro Resume Features</li>
+          <li>Unlimited Downloads</li>
+          <li>Email Support</li>
+        </ul>
+        <button onclick="choosePlan('monthly')">Select</button>
+      </div>
+
+      <!-- Lifetime Plan -->
+      <div class="plan-card">
+        <h2>Lifetime</h2>
+        <p class="price">$7.49</p>
+        <ul>
+          <li>All Pro Features</li>
+          <li>Lifetime Access</li>
+          <li>Priority Support</li>
+        </ul>
+        <button onclick="choosePlan('lifetime')">Select</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="subscription.js"></script>
+</body>
+</html>

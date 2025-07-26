@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Payment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h2>Enter Payment Details</h2><br>
+    <div class="payment-container">
+  <form id="payment-form">
+   <input type="text" name="cardNumber" maxlength="19" placeholder="Card Number" inputmode="numeric" pattern="[0-9\s]{13,19}" required><br>
+   <input type="text" name="expiry" placeholder="MM/YY" pattern="(0[1-9]|1[0-2])\/\d{2}" required><br>
+   <input type="password" name="cvv" maxlength="4" placeholder="CVV" pattern="\d{3,4}" inputmode="numeric" required><br>
+    <button type="submit">Subscribe</button>
+  </form>
+  </div>
+  <script src="payment.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+# Node modules
+node_modules/
+
+# API keys and secrets
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+
+# OS-specific junk
+.DS_Store
+Thumbs.db
+
+# Editor-specific junk (optional)
+.vscode/
+.idea/
+
+# Build outputs
+dist/
+build/
+
+# Vercel / Netlify deployment configs
+.vercel/
+.netlify/
+
+# Optional: if you're using npm or yarn
+package-lock.json
+yarn.lock
